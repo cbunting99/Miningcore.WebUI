@@ -9,42 +9,11 @@
 // You can check the result in you browser development view -> F12 -> Console 
 // -->> !! no need to change anything below here !! <<--
 // --------------------------------------------------------------------------------------------
-// --------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-// read WebURL from current browser
-var WebURL         = window.location.protocol + "//" + window.location.hostname + "/";  // Website URL is:  https://domain.com/
-// WebURL correction if not ends with /
-if (WebURL.substring(WebURL.length-1) != "/")
-{
-	WebURL = WebURL + "/";
-	console.log('Corrected WebURL, does not end with / -> New WebURL : ', WebURL);
-}
-var API            = WebURL + "api/";   						// API address is:  https://domain.com/api/
-// API correction if not ends with /
-if (API.substring(API.length-1) != "/")
-{
-	API = API + "/";
-	console.log('Corrected API, does not end with / -> New API : ', API);
-} 
-var stratumAddress = window.location.hostname;           				// Stratum address is:  domain.com
-
-
-
-
-
-
-
+var WebURL = "http://10.0.0.166/";
+var API = "http://10.0.0.166:4082/api/";
+var stratumAddress = "stratum+tcp://10.0.0.166:";
 
 // --------------------------------------------------------------------------------------------
 // no need to change anything below here
